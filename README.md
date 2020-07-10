@@ -250,4 +250,12 @@ Objects in Object:
 * This is very easy to read,understand and write.
 * This is very easy for the machines to parse and generate data.
 * This is subset of `javascript programming language standards (ECMA SCRIPT - 262)`.
+* For accessing JSON data from a HTML document, we need to use a server.
+	* npm server
+	* web server for chrome (`200 OK`)
+		* Web server for chrome is a static server invented google team. This allows us to access any information from external file into a HTML document.
+		* **Installation of `200 OK`**
+			* _Type **web server for chrome** in your chrome browser_ and press Enter.
+			* _We have to choose web server for chrome from chrome.google.com from listing_.
+			* _We have to click on add to chrome button. Soon after we will see a dialogue box and then click on add app_.
 
