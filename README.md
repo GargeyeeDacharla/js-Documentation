@@ -259,3 +259,21 @@ Objects in Object:
 			* _We have to choose web server for chrome from chrome.google.com from listing_.
 			* _We have to click on add to chrome button. Soon after we will see a dialogue box and then click on add app_.
 
+### Promises:
+A promise is an object that may produce a single value some time in the future. The client and the server communicating with eachother, client need to send a request to the server, the server need to respond to the client request simultaniously. This promise give us a value that the is resolved or not resolved.
+The states for the promise are
+* Fulfilled
+* Rejected
+* Pending
+
+The promise is a chine relation, We can build multiple coding blocks.
+The syntax:
+```javascript
+	promise(request).then(response=>{
+		return response;
+	})
+```
+
+Promises examples:
+* Fetch
+* Cache
