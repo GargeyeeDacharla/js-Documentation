@@ -277,3 +277,12 @@ The syntax:
 Promises examples:
 * Fetch
 * Cache
+
+Example:
+```javascript
+	fetch('data.json').then(response=>{
+		return response.json();
+	}).then(data=>{
+		console.log(data);
+	})
+```
