@@ -286,3 +286,4 @@ Example:
 		console.log(data);
 	})
 ```
+The promioses concept is the replacement for XMLHttpRequest. The XMLHttpRequest provides a way to communicate with client and server
