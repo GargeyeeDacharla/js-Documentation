@@ -287,3 +287,16 @@ Example:
 	})
 ```
 The promioses concept is the replacement for XMLHttpRequest. The XMLHttpRequest provides a way to communicate with client and server
+
+
+## React
+### Features of React
+* Its a library
+* Virtual DOM : _Its enable us to build scalable and fast applications_.
+* JSX
+* Components
+	* Functional Components (Stateless component)
+	* Class Component (Statefull component)
+	* Pure components
+	* Higher Order Components (HOC's)
+* One way data binding
