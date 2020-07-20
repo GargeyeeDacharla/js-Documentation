@@ -344,3 +344,24 @@ Syntax
 
 	export default StatesInFunction;
 ```
+
+
+Example II :
+```javascript
+	import React,{useState} from 'react';
+
+	let StatesInFunction=()=>{
+    		let initialValue=0;
+    		let [count,setCount]=useState(initialValue);
+    		return(
+        	  <div>
+            		<h2> {count} </h2>
+            		<button onClick={()=>{setCount(count-=-1)}}> Increment </button>
+            		<button onClick={()=>{setCount(count-=1)}}> Decrement </button>
+            		<button onClick={()=>{setCount(count=initialValue)}}> Initial </button>
+        	  </div>
+    		)
+	}
+
+	export default StatesInFunction;
+```
