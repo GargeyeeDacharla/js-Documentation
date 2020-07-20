@@ -300,3 +300,47 @@ The promioses concept is the replacement for XMLHttpRequest. The XMLHttpRequest 
 	* Pure components
 	* Higher Order Components (HOC's)
 * One way data binding
+
+### States and props in React
+**S**tate provides an ability to store information in the components. With in class component only we can use the state concept. We've to use the constructor method as well as the super method for initializing the state as we need information from the base class. By using `this.state` we can initialize a state. The state should be in object format. 
+
+Syntax:
+```javascript
+	constructor(){
+    		super();
+    		this.state={
+      		name:"Hanuman"
+    		}
+  	}
+```
+
+We can implement the state concept in class component only.
+
+#### But how we are going to implement the state functionality in a functional component ?
+We can implement this by using the concepts called **Hooks**.
+**H**ooks are new feature introduced in React 16.8 version. It allows us to use states and other React features without writing the class. We can implement the hooks in functional components.
+
+Example:
+	**useState**
+	This is for implementing the states concept in functional components.
+	
+Syntax
+```javascript
+	// Importing useState functionality from the base class
+	import React,{useState} from 'react';
+
+	let StatesInFunction=()=>{
+		// Here count is for initializing the value and setCount is for manipulating the initialized value
+    		const [count,setCount]=useState("Bye");
+    		return(
+        		<div>
+				<h2 
+					onMouseOver={()=>setCount("Hi")}
+					onMouseLeave={()=>setCount("Bye")}> {count} 
+				</h2>
+        		</div>
+    			)
+		}
+
+	export default StatesInFunction;
+```
