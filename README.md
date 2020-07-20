@@ -370,8 +370,9 @@ Example II :
 + **P**rops is a special keyword in React which is used for passing the data from one component to another component.
 + It is uni-directional
 + props data is read-only, which means the data coming from the parent component should not be changed by child components.
++ Props are arguments passed among React components.
 
-Example:
+Example: (Passing properties (`props`) from class component to a functional component)
 App.js
 ```javascript
 	import React,{Component} from 'react';
