@@ -365,3 +365,47 @@ Example II :
 
 	export default StatesInFunction;
 ```
+
+### Props in React
++ **P**rops is a special keyword in React which is used for passing the data from one component to another component.
++ It is uni-directional
++ props data is read-only, which means the data coming from the parent component should not be changed by child components.
+
+Example:
+App.js
+```javascript
+	import React,{Component} from 'react';
+	import './App.css';
+	import StatesInFunction from './StatesInFunction';
+	
+	class App extends Component{
+  	
+	render(){
+        return (
+    		<div className="App"> 
+			// Props	
+      			<StatesInFunction name="Nitesh" age="20 years"/>
+
+    		</div>
+    		)
+  	   }
+	}
+
+
+export default App;
+```
+StatesInFunction.js
+```javascript
+	import React from 'react';
+
+	let StatesInFunction=(props)=>{
+    		return(
+        		<div>
+            			<h2> {props.name} is {props.age} </h2>
+            			<h2> {count} </h2>
+        		</div>
+    		)
+	}
+
+	export default StatesInFunction;
+```
