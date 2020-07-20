@@ -410,3 +410,18 @@ StatesInFunction.js
 
 	export default StatesInFunction;
 ```
+#### But how we are going to access the props in class components
+Here we go with that
+```javascript
+	import React from 'react';
+
+	export default class StatesInFunction extends React.Component{
+    		render(){
+        		return(
+            			<div>
+                			<h2> {this.props.name} is {this.props.age} old. </h2>
+            			</div>
+        		)
+    		}
+	}
+```
