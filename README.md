@@ -427,8 +427,10 @@ Here we go with that
 ```
 ### Routing in React (react-router-dom)
 `npm install react-router-dom --save`
+
 #### Primary components of React-route-dom:
 * BrowserRouter
+	
 	Is usefull for initializing the navigation context. This is the parent component of `react-router-dom`
 	
 ```javascript
@@ -436,6 +438,7 @@ Here we go with that
 		</BrowserRoputer>
 ```
 * Route
+	
 	Is for specifying the path.
 	
 ```javascript
@@ -447,7 +450,8 @@ Here we go with that
 		</BrowserRouter>
 ```
 * Link
-	This is for providing event that calls to the path specified in the path.
+
+	This is for providing event that calls to the path specified in the path of route component.
 	
 ```javascript
 		<Link to="/about"> Click me </Link>
@@ -461,5 +465,5 @@ Example:
 		<Route path="/about" component={About}/> 
 	<BrowserRouter>
 	
-	<Link to="/about">
+	<Link to="/about" />
 ```
