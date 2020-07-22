@@ -425,3 +425,41 @@ Here we go with that
     		}
 	}
 ```
+### Routing in React (react-router-dom)
+`npm install react-router-dom --save`
+#### Primary components of React-route-dom:
+* BrowserRouter
+	Is usefull for initializing the navigation context. This is the parent component of `react-router-dom`
+	
+```javascript
+		<BrowserRouter>
+		</BrowserRoputer>
+```
+* Route
+	Is for specifying the path.
+	
+```javascript
+		<Route exact path="/about" component={About}>
+		</Route>
+		
+		<BrowserRouter>
+			<Route exact path="/about" component={About} />
+		</BrowserRouter>
+```
+* Link
+	This is for providing event that calls to the path specified in the path.
+	
+```javascript
+		<Link to="/about"> Click me </Link>
+		// <a href="/about"> Click me </a>
+```
+
+Example:
+
+```javascript
+	<BrowserRouter>
+		<Route path="/about" component={About}/> 
+	<BrowserRouter>
+	
+	<Link to="/about">
+```
