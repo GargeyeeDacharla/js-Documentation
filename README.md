@@ -444,7 +444,9 @@ Here we go with that
 ```javascript
 		<Route exact path="/about" component={About}>
 		</Route>
-		
+```
+
+```javascript
 		<BrowserRouter>
 			<Route exact path="/about" component={About} />
 		</BrowserRouter>
