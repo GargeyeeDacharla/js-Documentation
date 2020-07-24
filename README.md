@@ -469,3 +469,39 @@ Example:
 	
 	<Link to="/about" />
 ```
+
+Most of the web developers or web designers uses the link attribute (`<a> </a>`) to pass the data from one page to another page.
+
+In react we are using the `<Link> </Link>` attribute instead of anchor tag (`<a> </a>`).
+
+#### But how we are going to pass data from one component to another component using `<Link />` ?
+
+For this we have to pass the parameters in the format of object as shown below.
+
+```javascript
+	<Link to={{pathname:"/resume", data:{id:index}}} className="button"> View profile </Link>
+```
+
+* Here the `pathname` specifies the url we are going to navigate.
+* `data` represents the information which we are passing. Here `id` is the key and the `index` is the value.
+
+If you wanna access that information in destination component, we've to use the `location` keyword.
+
+```javascript
+	import React from 'react';
+	import {profiles} from './data.json';
+	import './App.css';
+
+	let Resume=(props)=>{
+    	var info=profiles[props.location.data.id];
+    	return(
+        	<section className="parent"> 
+            		<article className="basicsCard"> 
+                		<h2> {info.basics.name} </h2>
+            		</article>
+        	</section>
+    		)
+	}
+
+	export default Resume;
+```
