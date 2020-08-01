@@ -505,3 +505,27 @@ If you wanna access that information in destination component, we've to use the 
 
 	export default Resume;
 ```
+
+## Node JS
+### node with mysql
+Installing mysql
+
+`npm install mysql`
+
+#### COnnecting with mysql
+
+```javascript
+	var mysql = require('mysql');
+
+	// mysql connection
+	var connection=mysql.createConnection({
+		host:"localhost",
+		user:"root",
+		password:""
+	});
+	
+	connection.connect(err=>{
+		if err throw err
+		console.log("Connected to mysql");
+	})
+```
