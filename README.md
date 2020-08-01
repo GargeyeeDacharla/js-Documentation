@@ -560,3 +560,15 @@ Installing mysql
 		})
 	})
 ```
+
+#### Inserting Data
+```javascript
+	connection.connect(err=>{
+	if (err) throw err;
+	console.log("Connected to mysql");
+	connection.query("INSERT INTO employee (name,emaild,mobile) VALUES ('Hemanth','hemanth@gmail.com','9888786858')", 		(err,result)=>{
+		if(err) throw err;
+		console.log("Table created");
+		})
+	})
+```
