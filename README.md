@@ -529,3 +529,15 @@ Installing mysql
 		console.log("Connected to mysql");
 	})
 ```
+
+#### Creating a database
+```javascript
+	connection.connect(err=>{
+	if (err) throw err;
+	console.log("Connected to mysql");
+	connection.query("CREATE DATABASE node-info", (err,result)=>{
+		if(err) throw err;
+		console.log(result);
+		})
+	})
+```
