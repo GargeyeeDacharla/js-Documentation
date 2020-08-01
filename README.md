@@ -541,3 +541,22 @@ Installing mysql
 		})
 	})
 ```
+
+#### Creating a table
+```javascript
+	var connection=mysql.createConnection({
+		host:"localhost",
+		user:"root",
+		password:"",
+		**database**:"node_info"
+	});
+
+	connection.connect(err=>{
+		if (err) throw err;
+		console.log("Connected to mysql");
+		connection.query("CREATE TABLE employee (name varchar(20), emaild varchar(50), mobile varchar(20))", 			(err,result)=>{
+			if(err) throw err;
+			console.log("Table created");
+		})
+	})
+```
